@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exclusão de Conta – TrueConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonte corporativa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --primary: #1d4f91;
+        --primary-dark: #102947;
+        --accent: #00a2b8;
+        --bg-page: #f3f5f8;
+        --text-main: #222;
+        --text-muted: #666;
+        --card-bg: #ffffff;
+        --border-soft: #dde3ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-page);
+        color: var(--text-main);
+      }
+
+      .page-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: #fff;
+        padding: 18px 24px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .header-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: radial-gradient(circle at 30% 30%, #ffffff 0, #d9e5ff 30%, #1d4f91 100%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-name {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.85;
+      }
+
+      .header-tag {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+      }
+
+      .header-tag-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #3be1a0;
+      }
+
+      main {
+        flex: 1;
+        padding: 24px 16px 40px;
+      }
+
+      .card {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        border-radius: 14px;
+        padding: 32px 26px 34px;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        border: 1px solid var(--border-soft);
+      }
+
+      @media (min-width: 900px) {
+        .card {
+          padding: 40px 40px 44px;
+        }
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 8px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        border-left: 4px solid var(--primary);
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: var(--text-main);
+      }
+
+      ul {
+        margin: 6px 0 16px 20px;
+        padding: 0;
+        font-size: 14px;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      footer {
+        padding: 16px;
+        font-size: 12px;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      footer span {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="header-inner">
+          <div class="brand">
+            <!-- <div class="brand-logo">T</div> -->
+            <div class="brand-text">
+              <div class="brand-name">TrueConnect</div>
+              <div class="brand-subtitle">Exclusão de conta</div>
+            </div>
+          </div>
+
+          <div class="header-tag">
+            <span class="header-tag-dot"></span>
+            <span>Procedimento oficial</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <article class="card">
+          <header style="background: white !important">
+            <h1>Exclusão de Conta – TrueConnect</h1>
+          </header>
+
+          <section>
+            <h2>1. Como solicitar a exclusão da conta</h2>
+            <p>Se você deseja excluir sua conta e os dados relacionados ao aplicativo TrueConnect, siga os passos abaixo:</p>
+            <ul>
+              <li>Envie um e-mail, usando o <strong>mesmo endereço de e-mail cadastrado na sua conta</strong>, para <strong>suporte@catenasystem.com.br</strong>.</li>
+              <li>Use o assunto: <strong>“Exclusão de conta”</strong>.</li>
+              <li>No corpo do e-mail, informe o endereço de e-mail utilizado no aplicativo e confirme expressamente que deseja excluir sua conta.</li>
+            </ul>
+            <p>Sua solicitação será analisada e processada em até <strong>30 dias</strong>, conforme descrito nesta política. :contentReference[oaicite:1]{index=1}</p>
+          </section>
+
+          <section>
+            <h2>2. Dados que serão excluídos</h2>
+            <p>O usuário pode solicitar a exclusão dos seguintes dados pessoais e informações de perfil:</p>
+            <ul>
+              <li>Nome completo</li>
+              <li>CPF</li>
+              <li>E-mail</li>
+              <li>Senha</li>
+              <li>País, estado, cidade, endereço e bairro</li>
+              <li>Profissão</li>
+              <li>Data de nascimento</li>
+              <li>Foto de perfil</li>
+              <li>Classe de renda</li>
+              <li>Tokens de autenticação</li>
+              <li>Códigos de recuperação de senha</li>
+              <li>Solicitações de conexão com outros usuários</li>
+              <li>Selos de verificação pendentes ou expirados</li>
+              <li>Respostas a perguntas personalizadas em contratos</li>
+              <li>Aceites individuais de cláusulas contratuais associados exclusivamente à sua conta</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>3. Dados que podem ser mantidos temporariamente</h2>
+            <p>Para fins de integridade da plataforma, cumprimento de obrigações legais e segurança, alguns dados poderão ser mantidos mesmo após a solicitação de exclusão da conta:</p>
+            <ul>
+              <li>Registros de contratos celebrados (código, tipo, descrição, status, datas de início e fim, duração);</li>
+              <li>Histórico completo de auditoria de alterações em contratos (logs de modificações, valores anteriores e novos, timestamps, identificação do usuário responsável);</li>
+              <li>Cláusulas contratuais vinculadas a contratos ativos ou concluídos;</li>
+              <li>Informações sobre participantes em contratos dos quais você fez parte;</li>
+              <li>Selos de verificação ativos e verificados, associados à integridade de contratos já firmados;</li>
+              <li>Conexões aceitas e ativas com outros usuários, quando necessárias para a integridade da rede de confiança;</li>
+              <li>Dados anonimizados para fins estatísticos, de auditoria e melhoria do serviço.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. Períodos de retenção</h2>
+            <p>Os períodos de retenção seguem critérios legais, regulatórios e operacionais:</p>
+            <ul>
+              <li><strong>Contratos e logs de auditoria:</strong> podem ser mantidos por prazo indeterminado, para fins de conformidade legal, comprovação de relações contratuais e prevenção de fraudes.</li>
+              <li><strong>Dados pessoais de contas inativas por mais de 5 anos:</strong> podem ser anonimizados, de forma que não identifiquem mais diretamente o titular.</li>
+              <li><strong>Códigos de recuperação de senha:</strong> expiram em aproximadamente <strong>15 minutos</strong>.</li>
+              <li><strong>Tokens de autenticação:</strong> permanecem válidos até que seja realizado logout explícito, alteração de credenciais ou revogação por motivos de segurança.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>5. Método de exclusão</h2>
+            <p>A exclusão de dados no TrueConnect é realizada prioritariamente por meio de <strong>exclusão lógica (soft delete)</strong>, preservando a integridade referencial das informações ligadas a contratos, registros de auditoria e obrigações legais.</p>
+            <p>Sempre que possível, dados pessoais diretamente relacionados ao seu perfil são removidos ou anonimizados, de forma que não permitam mais sua identificação.</p>
+            <p>A solicitação de exclusão pode ser feita:</p>
+            <ul>
+              <li>Por meio das configurações do aplicativo (quando disponível); ou</li>
+              <li>Pelo contato direto com o suporte, via e-mail: <strong>suporte@catenasystem.com.br</strong>.</li>
+            </ul>
+            <p>Em caso de dúvidas adicionais sobre o processo de exclusão de conta ou retenção de dados, você poderá entrar em contato com nosso suporte ou com o Encarregado de Dados (DPO), conforme descrito na Política de Privacidade.</p>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <span
+          >©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          TrueConnect. Todos os direitos reservados.</span
+        >
+      </footer>
+    </div>
+  </body>
+</html>

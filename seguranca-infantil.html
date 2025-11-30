@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Padrões de Segurança Infantil – TrueConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonte corporativa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --primary: #1d4f91;
+        --primary-dark: #102947;
+        --accent: #00a2b8;
+        --bg-page: #f3f5f8;
+        --text-main: #222;
+        --text-muted: #666;
+        --card-bg: #ffffff;
+        --border-soft: #dde3ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-page);
+        color: var(--text-main);
+      }
+
+      .page-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: #fff;
+        padding: 18px 24px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .header-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: radial-gradient(circle at 30% 30%, #ffffff 0, #d9e5ff 30%, #1d4f91 100%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-name {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.85;
+      }
+
+      .header-tag {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+      }
+
+      .header-tag-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #3be1a0;
+      }
+
+      main {
+        flex: 1;
+        padding: 24px 16px 40px;
+      }
+
+      .card {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        border-radius: 14px;
+        padding: 32px 26px 34px;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        border: 1px solid var(--border-soft);
+      }
+
+      @media (min-width: 900px) {
+        .card {
+          padding: 40px 40px 44px;
+        }
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 8px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        border-left: 4px solid var(--primary);
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: var(--text-main);
+      }
+
+      ul {
+        margin: 6px 0 16px 20px;
+        padding: 0;
+        font-size: 14px;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      footer {
+        padding: 16px;
+        font-size: 12px;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      footer span {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="header-inner">
+          <div class="brand">
+            <!-- <div class="brand-logo">T</div> -->
+            <div class="brand-text">
+              <div class="brand-name">TrueConnect</div>
+              <div class="brand-subtitle">Padrões de Segurança Infantil</div>
+            </div>
+          </div>
+
+          <div class="header-tag">
+            <span class="header-tag-dot"></span>
+            <span>Conformidade CSAE / CSAM</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <article class="card">
+          <header style="background: white !important">
+            <h1>Padrões de Segurança Infantil – TrueConnect</h1>
+            <p style="font-size: 13px; color: #666; margin-top: 4px">
+              Aplicativo: <strong>TrueConnect - Plataforma de Contratos Digitais</strong><br />
+              Desenvolvedor: <strong>TrueConnect Tecnologia Ltda.</strong><br />
+              Última atualização: <strong>23 de novembro de 2025</strong> · Versão: <strong>1.0</strong>
+            </p>
+          </header>
+
+          <section>
+            <h2>Declaração de Conformidade</h2>
+            <p>Este documento estabelece os padrões publicados do aplicativo TrueConnect contra o abuso e exploração sexual infantil (Child Sexual Abuse and Exploitation – CSAE), em conformidade com a <strong>Política de Padrões de Segurança Infantil do Google Play</strong>.</p>
+          </section>
+
+          <section>
+            <h2>1. Compromisso com a proteção infantil</h2>
+            <p>O TrueConnect adota <strong>tolerância zero</strong> com qualquer forma de abuso, exploração ou conteúdo relacionado à exploração sexual infantil (CSAE). Nosso compromisso é manter a plataforma segura e proteger menores de idade contra:</p>
+            <ul>
+              <li><strong>Abuso sexual infantil:</strong> qualquer conduta que explore sexualmente crianças e adolescentes;</li>
+              <li><strong>Aliciamento (grooming):</strong> tentativas de estabelecer contato inapropriado com menores;</li>
+              <li><strong>Sextorsão:</strong> chantagem envolvendo conteúdo sexual de menores;</li>
+              <li><strong>Tráfico:</strong> facilitação ou promoção de tráfico de menores;</li>
+              <li><strong>Material de abuso sexual infantil (CSAM):</strong> qualquer representação visual de menores em conduta sexualmente explícita.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>2. Definições</h2>
+
+            <h3>2.1 CSAE (Child Sexual Abuse and Exploitation)</h3>
+            <p>Abuso e exploração sexual infantil, incluindo, mas não se limitando a:</p>
+            <ul>
+              <li>Aliciamento (grooming);</li>
+              <li>Sextorsão;</li>
+              <li>Tráfico de menores;</li>
+              <li>Qualquer conduta que explore sexualmente crianças e adolescentes.</li>
+            </ul>
+
+            <h3>2.2 CSAM (Child Sexual Abuse Material)</h3>
+            <p>Material de abuso sexual infantil: representações visuais (fotografias, vídeos, ilustrações, imagens geradas por computador) de menores em conduta sexualmente explícita. É <strong>terminantemente proibido</strong> pelos Termos de Serviço do Google e pela legislação brasileira.</p>
+          </section>
+
+          <section>
+            <h2>3. Conteúdo proibido</h2>
+            <p>São estritamente proibidos no aplicativo TrueConnect:</p>
+            <ul>
+              <li>Qualquer conteúdo que sexualize, explore ou abuse de menores de idade;</li>
+              <li>Imagens, vídeos, textos ou qualquer material que represente ou promova abuso sexual infantil (CSAM);</li>
+              <li>Solicitação, produção, distribuição ou posse de CSAM;</li>
+              <li>Aliciamento, grooming ou qualquer tentativa de contato inapropriado com menores;</li>
+              <li>Contratos, cláusulas ou conteúdos que facilitem, promovam ou normalizem exploração infantil;</li>
+              <li>Compartilhamento de informações pessoais de menores com intenção maliciosa;</li>
+              <li>Linguagem, imagens ou comportamentos sexualmente explícitos direcionados a menores;</li>
+              <li>Sextorsão ou chantagem envolvendo menores;</li>
+              <li>Facilitação ou promoção de tráfico de menores.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. Verificação de idade e restrições</h2>
+            <ul>
+              <li>Todos os usuários devem ter <strong>no mínimo 18 anos</strong> para utilizar o aplicativo TrueConnect;</li>
+              <li>O cadastro exige <strong>data de nascimento</strong> e <strong>CPF válido</strong> para verificação de maioridade;</li>
+              <li>Contas identificadas como pertencentes a menores de idade são imediatamente suspensas;</li>
+              <li>São utilizados sistemas automatizados e revisão manual para detectar cadastros fraudulentos;</li>
+              <li>Mesmo não sendo direcionado a menores, o TrueConnect cumpre integralmente a política de segurança infantil do Google Play.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>5. Mecanismos de feedback no aplicativo</h2>
+            <p>O TrueConnect fornece múltiplos mecanismos para que os usuários reportem preocupações relacionadas à segurança infantil sem sair do aplicativo:</p>
+
+            <h3>5.1 Botão “Denunciar”</h3>
+            <ul>
+              <li>Disponível em todos os perfis de usuários;</li>
+              <li>Disponível em todos os contratos e cláusulas;</li>
+              <li>Permite categorização específica da denúncia (incluindo “Conteúdo envolvendo menores”).</li>
+            </ul>
+
+            <h3>5.2 Chat de suporte in-app</h3>
+            <ul>
+              <li>Acesso direto à equipe de moderação;</li>
+              <li>Disponível 24/7 para casos urgentes;</li>
+              <li>Respostas priorizadas para denúncias de CSAE/CSAM.</li>
+            </ul>
+
+            <h3>5.3 Formulário de denúncia interno</h3>
+            <ul>
+              <li>Formulário estruturado dentro do aplicativo;</li>
+              <li>Permite anexar evidências (capturas de tela, links);</li>
+              <li>Opção de denúncia anônima.</li>
+            </ul>
+
+            <h3>5.4 E-mail direto</h3>
+            <p>Também acessíveis via app:</p>
+            <ul>
+              <li><strong>suporte@catenasystema.com.br</strong> – Para denúncias de abuso;</li>
+              <li><strong>suporte@catenasystema.com.br</strong> – Para questões de segurança.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>6. Detecção e prevenção</h2>
+            <p>O TrueConnect implementa múltiplas camadas de proteção:</p>
+
+            <h3>6.1 Tecnologia</h3>
+            <ul>
+              <li>Sistemas automatizados de detecção de conteúdo inapropriado;</li>
+              <li>Análise de padrões comportamentais suspeitos;</li>
+              <li>Filtragem de linguagem e imagens com tecnologia de IA;</li>
+              <li>Monitoramento contínuo das atividades na plataforma;</li>
+              <li><em>Hash matching</em> para identificação de CSAM conhecido.</li>
+            </ul>
+
+            <h3>6.2 Moderação humana</h3>
+            <ul>
+              <li>Equipe dedicada de moderação, treinada em identificação de CSAE/CSAM;</li>
+              <li>Revisão manual de denúncias e de conteúdos sinalizados;</li>
+              <li>Análise de contratos e cláusulas com marcadores sensíveis;</li>
+              <li>Treinamento contínuo baseado em melhores práticas da Tech Coalition.</li>
+            </ul>
+
+            <h3>6.3 Cláusulas sensíveis</h3>
+            <ul>
+              <li>Sistema de marcação de cláusulas com conteúdo adulto (flag “sexual”);</li>
+              <li>Controles adicionais para contratos com conteúdo sensível;</li>
+              <li>Verificação reforçada de idade e consentimento.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>7. Tratamento de CSAM</h2>
+
+            <h3>7.1 Ação imediata</h3>
+            <ul>
+              <li>Remoção imediata de todo conteúdo CSAM identificado;</li>
+              <li>Suspensão permanente da conta do infrator;</li>
+              <li>Preservação de evidências digitais para investigação.</li>
+            </ul>
+
+            <h3>7.2 Reporte obrigatório</h3>
+            <p>Notificação às autoridades competentes, incluindo:</p>
+            <ul>
+              <li>Polícia Federal Brasileira;</li>
+              <li>National Center for Missing &amp; Exploited Children (NCMEC), quando aplicável;</li>
+              <li>Ministério Público;</li>
+              <li>Outras autoridades competentes, conforme o caso.</li>
+            </ul>
+
+            <h3>7.3 Conformidade legal</h3>
+            <ul>
+              <li>Estatuto da Criança e do Adolescente (ECA) – Lei 8.069/1990;</li>
+              <li>Código Penal Brasileiro – Artigos 240, 241, 241-A, 241-B, 241-C, 241-D;</li>
+              <li>Termos de Serviço do Google;</li>
+              <li>Leis internacionais aplicáveis (como COPPA e GDPR).</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>8. Análise de denúncias</h2>
+
+            <h3>8.1 Tempo de resposta</h3>
+            <ul>
+              <li>Todas as denúncias são analisadas em até <strong>24 horas</strong>;</li>
+              <li>Casos urgentes envolvendo menores são priorizados (análise em até <strong>2 horas</strong>);</li>
+              <li>Denúncias de CSAM recebem ação imediata (menos de <strong>1 hora</strong> sempre que possível).</li>
+            </ul>
+
+            <h3>8.2 Processo de análise</h3>
+            <ul>
+              <li>Denúncias anônimas são aceitas e protegidas;</li>
+              <li>Análise por equipe especializada em segurança infantil;</li>
+              <li>Denunciantes podem ser informados sobre as ações tomadas (quando aplicável);</li>
+              <li>Registro completo em sistema de auditoria.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Ações e consequências</h2>
+
+            <h3>9.1 Ações imediatas</h3>
+            <ul>
+              <li>Suspensão imediata da conta do infrator;</li>
+              <li>Remoção de todo conteúdo relacionado;</li>
+              <li>Bloqueio permanente de acesso à plataforma;</li>
+              <li>Preservação de evidências digitais.</li>
+            </ul>
+
+            <h3>9.2 Ações legais</h3>
+            <ul>
+              <li>Reporte obrigatório às autoridades competentes (Polícia Federal, Ministério Público);</li>
+              <li>Cooperação total com investigações policiais e judiciais;</li>
+              <li>Fornecimento de logs, registros de auditoria e evidências digitais;</li>
+              <li>Denúncia ao NCMEC quando aplicável;</li>
+              <li>Notificação ao Conselho Tutelar e autoridades locais.</li>
+            </ul>
+
+            <h3>9.3 Dados preservados para investigação</h3>
+            <p>Mesmo após exclusão de conta, alguns dados são preservados indefinidamente, exclusivamente para fins legais:</p>
+            <ul>
+              <li>Logs de auditoria completos;</li>
+              <li>Registros de contratos e interações relevantes;</li>
+              <li>Informações de identificação do usuário (como CPF, e-mail, IP);</li>
+              <li>Timestamps de atividades;</li>
+              <li>Evidências de violações relacionadas a CSAE/CSAM.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>10. Ponto de contato para segurança infantil</h2>
+            <p>O TrueConnect designou um responsável específico para questões relacionadas a CSAM e segurança infantil:</p>
+            <ul>
+              <li><strong>Nome:</strong> [A ser designado no Play Console]</li>
+              <li><strong>Cargo:</strong> Responsável de Segurança Infantil</li>
+              <li><strong>E-mail:</strong> suporte@catenasystema.com.br</li>
+              <li><strong>Telefone:</strong> +55 (XX) XXXX-XXXX</li>
+            </ul>
+            <p>Este contato está disponível para:</p>
+            <ul>
+              <li>Autoridades policiais e judiciais;</li>
+              <li>Google Play e outras plataformas;</li>
+              <li>Organizações de proteção infantil;</li>
+              <li>Questões urgentes relacionadas a CSAM/CSAE.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>11. Cooperação com autoridades</h2>
+            <p>O TrueConnect coopera ativamente com:</p>
+            <ul>
+              <li>Polícia Federal Brasileira – Divisão de Crimes Cibernéticos;</li>
+              <li>Ministério Público Federal e Estadual;</li>
+              <li>SaferNet Brasil;</li>
+              <li>National Center for Missing &amp; Exploited Children (NCMEC);</li>
+              <li>INTERPOL, para casos internacionais;</li>
+              <li>Conselhos Tutelares;</li>
+              <li>Tech Coalition, seguindo melhores práticas para combate ao CSAE online.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>12. Conformidade com leis de segurança infantil</h2>
+
+            <h3>12.1 Legislação brasileira</h3>
+            <ul>
+              <li>Estatuto da Criança e do Adolescente (ECA) – Lei 8.069/1990;</li>
+              <li>Marco Civil da Internet – Lei 12.965/2014;</li>
+              <li>Lei Geral de Proteção de Dados (LGPD) – Lei 13.709/2018;</li>
+              <li>Código Penal Brasileiro – artigos 240, 241, 241-A, 241-B, 241-C, 241-D.</li>
+            </ul>
+
+            <h3>12.2 Legislação internacional</h3>
+            <ul>
+              <li>COPPA (Children's Online Privacy Protection Act) – EUA;</li>
+              <li>GDPR (General Data Protection Regulation) – União Europeia;</li>
+              <li>Termos de Serviço do Google Play.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>13. Educação e conscientização</h2>
+            <ul>
+              <li>Campanhas educativas sobre segurança online;</li>
+              <li>Orientações sobre identificação de comportamentos suspeitos;</li>
+              <li>Recursos para pais e responsáveis;</li>
+              <li>Treinamento contínuo da equipe em proteção infantil (Tech Coalition);</li>
+              <li>Parcerias com organizações de proteção à infância.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>14. Transparência</h2>
+            <p>O TrueConnect publica periodicamente:</p>
+            <ul>
+              <li>Relatório de transparência com estatísticas de denúncias;</li>
+              <li>Número de contas suspensas por violações de CSAE/CSAM;</li>
+              <li>Quantidade de reportes às autoridades;</li>
+              <li>Melhorias implementadas nos sistemas de proteção;</li>
+              <li>Tempo médio de resposta a denúncias.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>15. Contatos de emergência</h2>
+
+            <h3>Para usuários do aplicativo</h3>
+            <ul>
+              <li><strong>E-mail de denúncias:</strong> suporte@catenasystema.com.br</li>
+              <li><strong>E-mail de segurança:</strong> suporte@catenasystema.com.br</li>
+              <li><strong>Ponto de contato CSAM:</strong> suporte@catenasystema.com.br</li>
+              <li><strong>Telefone de emergência:</strong> 0800-XXX-XXXX (disponível 24/7)</li>
+            </ul>
+
+            <h3>Autoridades brasileiras</h3>
+            <ul>
+              <li><strong>Disque 100</strong> – Direitos Humanos (denúncias de violência contra crianças);</li>
+              <li><strong>Polícia Federal:</strong> denuncia@dpf.gov.br;</li>
+              <li><strong>SaferNet Brasil:</strong> www.safernet.org.br.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>16. Atualizações desta política</h2>
+            <p>Esta política é revisada e atualizada regularmente para incorporar:</p>
+            <ul>
+              <li>Novas tecnologias de detecção;</li>
+              <li>Mudanças na legislação;</li>
+              <li>Melhores práticas internacionais da Tech Coalition;</li>
+              <li>Feedback de autoridades e organizações parceiras;</li>
+              <li>Atualizações nas políticas do Google Play.</li>
+            </ul>
+            <p>Usuários serão notificados sobre alterações significativas desta política por meio do aplicativo e/ou e-mail cadastrado.</p>
+          </section>
+
+          <section>
+            <h2>17. Recursos adicionais</h2>
+            <p>Para mais informações sobre combate ao CSAE online, consulte:</p>
+            <ul>
+              <li>Tech Coalition Best Practices: <a href="https://www.techcoalition.org/" target="_blank" rel="noopener noreferrer">https://www.techcoalition.org/</a></li>
+              <li>SaferNet Brasil: <a href="https://www.safernet.org.br" target="_blank" rel="noopener noreferrer">https://www.safernet.org.br</a></li>
+              <li>NCMEC (National Center for Missing &amp; Exploited Children): <a href="https://www.missingkids.org" target="_blank" rel="noopener noreferrer">https://www.missingkids.org</a></li>
+              <li>Políticas do Google Play: <a href="https://support.google.com/googleplay/android-developer/answer/14747720" target="_blank" rel="noopener noreferrer">documentação oficial</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>18. Declaração final</h2>
+            <p>O TrueConnect reafirma seu compromisso inabalável com a proteção de crianças e adolescentes. Esta política representa nossos padrões publicados contra o abuso e exploração sexual infantil (CSAE) e está em total conformidade com:</p>
+            <ul>
+              <li>Política de Padrões de Segurança Infantil do Google Play;</li>
+              <li>Legislação brasileira (ECA, LGPD, Código Penal);</li>
+              <li>Legislação internacional (COPPA, GDPR);</li>
+              <li>Melhores práticas da Tech Coalition;</li>
+              <li>Termos de Serviço do Google.</li>
+            </ul>
+            <p>Este documento está disponível publicamente e faz referência explícita ao aplicativo TrueConnect e à desenvolvedora TrueConnect Tecnologia Ltda. A proteção de menores é nossa prioridade máxima.</p>
+            <p>Para questões relacionadas a esta política, entre em contato:</p>
+            <ul>
+              <li><strong>E-mail:</strong> suporte@catenasystema.com.br</li>
+              <li><strong>Telefone:</strong> 0800-XXX-XXXX (24/7)</li>
+            </ul>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <span
+          >©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          TrueConnect. Todos os direitos reservados.</span
+        >
+      </footer>
+    </div>
+  </body>
+</html>

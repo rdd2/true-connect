@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Política de Privacidade – TrueConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --primary: #1d4f91;
+        --primary-dark: #102947;
+        --accent: #00a2b8;
+        --bg-page: #f3f5f8;
+        --text-main: #222;
+        --text-muted: #666;
+        --card-bg: #ffffff;
+        --border-soft: #dde3ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-page);
+        color: var(--text-main);
+      }
+
+      .page-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: #fff;
+        padding: 18px 24px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .header-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: radial-gradient(circle at 30% 30%, #ffffff 0, #d9e5ff 30%, #1d4f91 100%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-name {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.85;
+      }
+
+      .header-tag {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+      }
+
+      .header-tag-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #3be1a0;
+      }
+
+      main {
+        flex: 1;
+        padding: 24px 16px 40px;
+      }
+
+      .card {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        border-radius: 14px;
+        padding: 32px 26px 34px;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        border: 1px solid var(--border-soft);
+      }
+
+      @media (min-width: 900px) {
+        .card {
+          padding: 40px 40px 44px;
+        }
+      }
+
+      .document-meta {
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 8px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        border-left: 4px solid var(--primary);
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-top: 24px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      h4 {
+        font-size: 14px;
+        margin-top: 18px;
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: var(--text-main);
+      }
+
+      ul {
+        margin: 6px 0 16px 20px;
+        padding: 0;
+        font-size: 14px;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      .section-note {
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+
+      footer {
+        padding: 16px;
+        font-size: 12px;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      footer span {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="header-inner">
+          <div class="brand">
+            <!-- <div class="brand-logo">T</div> -->
+            <div class="brand-text">
+              <div class="brand-name">TrueConnect</div>
+              <div class="brand-subtitle">Política de Privacidade</div>
+            </div>
+          </div>
+
+          <div class="header-tag">
+            <span class="header-tag-dot"></span>
+            <span>Documento oficial</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <article class="card">
+          <header style="background: white !important">
+            <h1>Política de Privacidade – TrueConnect</h1>
+            <div class="document-meta">Brasil – 19/11/2025</div>
+          </header>
+          <section>
+            <h2>1. Quem somos</h2>
+            <p>
+              <strong>TrueConnect</strong><br />
+              Rua Cordisburgo, 23, Bairro Santa Inês, Belo Horizonte - MG, Brasil.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. A que esta Política de Privacidade se aplica</h2>
+            <p>Esta Política de Privacidade é aplicável a sites, aplicativos, eventos e outros serviços operados sob a marca TrueConnect. Quer você esteja procurando sua alma gêmea, participando de um dos nossos eventos ou usando qualquer um dos nossos outros serviços, esta Política se aplica. Para simplificar, nos referimos a tudo isso como o nosso “serviço” nesta Política de Privacidade.</p>
+            <p>Se, por algum motivo, um dos nossos serviços exigir sua própria política de privacidade separada, essa política será disponibilizada a você e, nesse caso, ela – e não esta Política de Privacidade – será aplicada.</p>
+          </section>
+
+          <section>
+            <h2>3. Dados que coletamos</h2>
+            <p>Para ajudar você a desenvolver conexões significativas, precisamos de algumas informações a seu respeito, como detalhes básicos do perfil e os tipos de pessoas que você gostaria de conhecer. O uso do nosso serviço também gera algumas informações, como quando você faz login e como você usa o serviço. Também poderemos coletar dados de terceiros, como quando você acessa o serviço por meio de uma conta que você tenha em outra plataforma (por exemplo, Facebook, Google ou Apple) ou quando você carrega informações da sua conta em outra plataforma para concluir o seu perfil.</p>
+
+            <h3>3.1. Dados que você nos fornece</h3>
+
+            <h4>Dados da conta</h4>
+            <p>Ao criar uma conta, você nos fornece informações básicas para que sua conta seja configurada, como seu número de telefone, e-mail e data de nascimento.</p>
+
+            <h4>Dados do perfil</h4>
+            <p>Ao preencher seu perfil, você compartilha informações adicionais sobre você, como gênero, interesses, preferências, localização aproximada etc. Alguns destes dados poderão ser considerados sigilosos ou especiais em determinados países, como informações sobre orientação sexual, vida sexual, saúde ou filiações políticas. Se você optar por fornecer esses dados, você concorda que os usaremos conforme estabelecido nesta Política de Privacidade.</p>
+
+            <h4>Conteúdo</h4>
+            <p>Ao utilizar o serviço, você poderá publicar fotos, vídeos, áudios, textos e outros tipos de conteúdo, como suas conversas com outros usuários.</p>
+
+            <h4>Dados de compra</h4>
+            <p>Quando você faz uma compra, recebemos os detalhes da operação (por exemplo, o que você comprou, a data da operação e o preço). Os dados exatos dependem do método de pagamento escolhido. Quando você faz uma compra diretamente conosco (e não por meio de uma plataforma como iOS ou Android), você nos informa o número do seu cartão de crédito ou débito ou outras informações financeiras.</p>
+
+            <h4>Dados de marketing, levantamentos e pesquisas</h4>
+            <p>Às vezes, realizamos pesquisas, grupos de foco ou estudos de mercado para fins de análise, bem como promoções, eventos ou concursos para fins de marketing. Ao optar por participar, você nos fornece informações para processarmos seu registro e participação, bem como suas respostas às nossas perguntas e seus comentários.</p>
+
+            <h4>Dados de terceiros</h4>
+            <p>Quando você opta por compartilhar conosco informações a respeito de outras pessoas (por exemplo, se você usar as informações de contato de alguém que você conhece para um determinado recurso ou se enviar uma consulta ou denúncia envolvendo algum membro), processamos esses dados em seu nome para concluir sua solicitação.</p>
+
+            <h4>Dados de suporte ao cliente</h4>
+            <p>Ao entrar em contato conosco, você nos fornece informações que poderão ser necessárias para ajudar a solucionar sua dúvida. Outras pessoas também poderão enviar perguntas ou denúncias envolvendo você. Nossas ferramentas e equipes de moderação podem coletar dados adicionais como parte de investigações.</p>
+
+            <h4>Dados de redes sociais</h4>
+            <p>Você poderá decidir compartilhar dados conosco por meio das suas contas em outras plataformas (por exemplo, Facebook, Instagram, Spotify, Apple), por exemplo, se decidir criar e fazer login em sua conta por meio dessas plataformas ou se decidir carregar dados como fotos ou listas de reprodução em nosso serviço a partir dessas plataformas.</p>
+
+            <h3>3.2. Dados gerados ou coletados automaticamente</h3>
+
+            <h4>Dados de uso</h4>
+            <p>O uso do serviço gera dados sobre suas atividades, inclusive como você o utiliza (por exemplo, quando você faz login, recursos que utiliza, ações tomadas, informações exibidas a você, páginas da internet de referência, anúncios com os quais você interagiu) e como interage com outras pessoas (por exemplo, pesquisando, dando “match”, se comunicando). Também poderemos receber dados relacionados a interações que você teve com nossos anúncios em sites ou aplicativos de terceiros.</p>
+
+            <h4>Dados técnicos</h4>
+            <p>O uso do serviço envolve a coleta de dados de e sobre os dispositivos que você utiliza para acessar o nosso serviço, inclusive informações de hardware e software, como endereço IP, ID e tipo de dispositivo, configurações e características de aplicativos, falhas do aplicativo, IDs de publicidade e identificadores associados a cookies e outras tecnologias que possam identificar exclusivamente um dispositivo ou navegador. Para obter mais informações sobre cookies, consulte nossa Política de Cookies.</p>
+
+            <h3>3.3. Outros dados que coletamos com sua permissão/consentimento</h3>
+
+            <h4>Dados de localização geográfica</h4>
+            <p>Se você nos der permissão, podemos coletar a localização geográfica precisa (latitude e longitude) do seu dispositivo. Se você recusar a permissão, os recursos que dependem de localização geográfica precisa poderão não estar disponíveis para você.</p>
+
+            <h4>Dados de geometria facial</h4>
+            <p>Você poderá optar por participar de alguns dos nossos recursos, como verificação de foto ou verificação de identidade com foto, que envolvem a coleta de dados de geometria facial, os quais poderão ser considerados dados biométricos em algumas jurisdições. Caso use esses recursos, processaremos seus dados conforme descrito nesta Política.</p>
+
+            <h4>Dados de identificação (ID)</h4>
+            <p>Você poderá nos fornecer uma cópia do seu documento de identidade emitido pelo governo para nos ajudar a verificar se você é quem diz ser.</p>
+          </section>
+
+          <section>
+            <h2>4. Por que e como usamos seus dados</h2>
+            <p>O principal motivo pelo qual processamos os seus dados é para disponibilizar o nosso serviço a você e melhorá-lo ao longo do tempo. Isso inclui conectá-lo com membros com segurança, personalizar sua experiência e ajudá-lo a aproveitar ao máximo o nosso serviço. Também processamos seus dados para manter você e todos os nossos membros seguros ao utilizar o serviço.</p>
+            <p>Também processamos seus dados para exibir anúncios e ofertas relevantes — você pode controlar algumas dessas atividades em suas configurações.</p>
+
+            <h3>4.1. Finalidades do processamento e bases legais</h3>
+
+            <h4>Permitir que você use o serviço</h4>
+            <ul>
+              <li>Criar e manter sua conta e perfil;</li>
+              <li>Operar e manter os diversos recursos;</li>
+              <li>Recomendar outros membros a você e recomendar você a outros membros;</li>
+              <li>Responder às suas solicitações e dúvidas;</li>
+              <li>Monitorar o bom funcionamento do serviço, solucionar e corrigir problemas;</li>
+              <li>Processar sua participação em serviços especiais ou VIP.</li>
+            </ul>
+            <p><strong>Base legal:</strong> execução do contrato; consentimento (para dados sensíveis, quando exigido).</p>
+
+            <h4>Habilitar suas compras no serviço</h4>
+            <ul>
+              <li>Processar pagamentos;</li>
+              <li>Oferecer descontos e promoções, incluindo preços personalizados.</li>
+            </ul>
+            <p><strong>Base legal:</strong> execução do contrato.</p>
+
+            <h4>Operar campanhas de publicidade e marketing</h4>
+            <ul>
+              <li>Realizar e medir a eficácia de campanhas publicitárias no serviço;</li>
+              <li>Realizar e medir campanhas que promovem o nosso serviço em plataformas de terceiros;</li>
+              <li>Comunicar-se com você sobre produtos e serviços que possam ser de seu interesse.</li>
+            </ul>
+            <p><strong>Base legal:</strong> consentimento (quando exigido); interesse legítimo.</p>
+
+            <h4>Melhorar o serviço e criar novos recursos</h4>
+            <ul>
+              <li>Realizar grupos de foco, pesquisas e estudos de mercado;</li>
+              <li>Analisar como o serviço é utilizado;</li>
+              <li>Avaliar interações com o atendimento ao cliente;</li>
+              <li>Desenvolver e testar novos recursos, inclusive por meio de aprendizado de máquina;</li>
+              <li>Conduzir pesquisas e publicar análises agregadas.</li>
+            </ul>
+            <p><strong>Base legal:</strong> execução do contrato; interesse legítimo; consentimento, quando exigido.</p>
+
+            <h4>Segurança, integridade e cumprimento de regras</h4>
+            <ul>
+              <li>Prevenir, detectar e combater violações de nossos Termos, fraudes e outras atividades ilegais;</li>
+              <li>Desenvolver e melhorar ferramentas para segurança e prevenção de abusos;</li>
+              <li>Prevenir reincidência, incluindo impedir que pessoas banidas criem novas contas;</li>
+              <li>Verificar sua identidade;</li>
+              <li>Proteger pagamentos e combater fraudes financeiras.</li>
+            </ul>
+            <p><strong>Base legal:</strong> execução do contrato; interesse legítimo; cumprimento de obrigações legais; proteção de interesses vitais; consentimento para dados sensíveis, quando exigido.</p>
+
+            <h4>Cumprir a legislação e defender direitos</h4>
+            <ul>
+              <li>Preservar dados para demonstrar conformidade com leis aplicáveis;</li>
+              <li>Apoiar investigações e defender-nos em litígios;</li>
+              <li>Responder a solicitações legítimas de autoridades;</li>
+              <li>Denunciar conteúdo ilegal ou infrator;</li>
+              <li>Estabelecer, exercer ou defender reivindicações judiciais.</li>
+            </ul>
+            <p><strong>Base legal:</strong> cumprimento de obrigações legais; interesse legítimo; proteção de interesses vitais.</p>
+          </section>
+
+          <section>
+            <h2>5. Como compartilhamos os dados</h2>
+            <p>Nosso objetivo é ajudá-lo a fazer conexões seguras. Por isso, algumas de suas informações são naturalmente visíveis para outros membros no serviço. Também compartilhamos dados com prestadores de serviços e parceiros que nos auxiliam na operação do serviço e, em alguns casos, com autoridades e terceiros.</p>
+
+            <h4>Outros membros</h4>
+            <p>Você compartilha dados com outros membros ao divulgar voluntariamente informações no serviço para que outras pessoas vejam (por exemplo, seu perfil público). Se alguém enviar uma denúncia envolvendo você, poderemos informar ao denunciante as medidas que tomamos, se houver.</p>
+
+            <h4>Prestadores de serviços e parceiros</h4>
+            <p>Compartilhamos dados com fornecedores e parceiros que nos ajudam a operar, promover e melhorar o serviço. Esses terceiros prestam serviços como hospedagem e manutenção de dados, análises, atendimento ao cliente, marketing, publicidade, processamento de pagamentos, suporte jurídico e operações de segurança.</p>
+
+            <h4>Parceiros de publicidade</h4>
+            <p>Podemos exibir anúncios sobre produtos e serviços de terceiros em nosso serviço e exibir anúncios que promovem o TrueConnect em sites e aplicativos de terceiros. Para melhorar a relevância desses anúncios, podemos fornecer determinadas informações a parceiros de publicidade ou permitir que eles coletem dados por meio de cookies, SDKs ou tecnologias semelhantes.</p>
+
+            <h4>Afiliadas e operações societárias</h4>
+            <p>Podemos compartilhar dados com nossas afiliadas ou receber dados delas para finalidades de segurança, suporte operacional, cumprimento de obrigações legais ou outras finalidades legítimas. Também poderemos transferir dados em caso de fusão, aquisição, reestruturação ou operação similar.</p>
+
+            <h4>Autoridades judiciais e governamentais</h4>
+            <p>Podemos divulgar seus dados para: (i) cumprir determinações legais; (ii) auxiliar na prevenção ou detecção de crimes; (iii) proteger a segurança de pessoas; ou (iv) estabelecer, exercer ou defender direitos em processos judiciais.</p>
+          </section>
+
+          <section>
+            <h2>6. Transferências internacionais de dados</h2>
+            <p>Como operamos um serviço global, o compartilhamento de seus dados pode envolver transferências internacionais, incluindo para os Estados Unidos e outros países que podem ter leis diferentes sobre proteção de dados. Quando transferimos dados pessoais para fora de jurisdições com legislação considerada adequada, utilizamos mecanismos legais apropriados.</p>
+          </section>
+
+          <section>
+            <h2>7. Seus direitos</h2>
+            <p>Dependendo da sua localização e da legislação aplicável (como LGPD no Brasil ou GDPR na União Europeia), você pode ter alguns ou todos os direitos abaixo:</p>
+            <ul>
+              <li><strong>Acesso / Portabilidade:</strong> ser informado e solicitar cópia dos dados pessoais processados;</li>
+              <li><strong>Retificação:</strong> corrigir ou atualizar dados pessoais imprecisos ou incompletos;</li>
+              <li><strong>Exclusão:</strong> solicitar a exclusão de seus dados pessoais;</li>
+              <li><strong>Objeção ou Restrição:</strong> se opor a determinados tratamentos ou solicitar a limitação do uso;</li>
+              <li><strong>Retirada de consentimento:</strong> quando o tratamento se basear em consentimento, você pode retirá-lo a qualquer momento.</li>
+            </ul>
+            <p>Você pode exercer muitos desses direitos diretamente pelo aplicativo, atualizando seu perfil, ajustando configurações de privacidade ou encerrando sua conta. Caso precise de ajuda adicional, entre em contato pelos canais indicados.</p>
+          </section>
+
+          <section>
+            <h2>8. Por quanto tempo preservamos seus dados</h2>
+            <p>Mantemos seus dados pessoais apenas pelo tempo necessário para atender às finalidades descritas nesta Política e conforme permitido ou exigido pela legislação aplicável.</p>
+            <p>Se você decidir encerrar sua conta, seu perfil deixará de ser exibido para outros membros. Alguns dados poderão ser mantidos por períodos adicionais para:</p>
+            <ul>
+              <li>cumprir obrigações legais de retenção;</li>
+              <li>apoiar investigações e prevenir fraudes;</li>
+              <li>exercer ou defender direitos em processos judiciais;</li>
+              <li>manter registros de consentimento e preferências de privacidade.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Privacidade de menores de idade</h2>
+            <p>Nossos serviços são destinados apenas a pessoas com 18 anos ou mais. Não permitimos menores de 18 anos em nossa plataforma. Se você suspeitar que um membro possui menos de 18 anos, utilize o mecanismo de denúncia disponível no serviço para que possamos tomar as medidas cabíveis.</p>
+          </section>
+
+          <section>
+            <h2>10. Alterações a esta Política de Privacidade</h2>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas, em requisitos legais ou em nossos serviços. Quando fizermos alterações materiais, informaremos você por meio do aplicativo, e-mail ou outros meios adequados, antes que tais alterações entrem em vigor.</p>
+          </section>
+
+          <section>
+            <h2>11. Como entrar em contato conosco</h2>
+            <p><strong>Brasil (exemplo):</strong></p>
+            <p>
+              Encarregado de Dados (DPO): Catena Sistemas de Informação LTDA<br />
+              Responsável: Darley Wilson Dias<br />
+              E-mail: gestor@catenasystem.com.br
+            </p>
+            <p><strong>Outros países:</strong></p>
+            <p>Entre em contato por meio do formulário de suporte disponível em nosso site/aplicativo ou pelo e-mail de privacidade indicado nas configurações do app.</p>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <span
+          >©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          TrueConnect. Todos os direitos reservados.</span
+        >
+      </footer>
+    </div>
+  </body>
+</html>
